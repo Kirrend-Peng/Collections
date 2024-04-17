@@ -1,0 +1,15 @@
+{
+    "Events": [
+        {
+            "eventItem": [
+				{
+					"Type": "Teleport",
+					"Object":"Player",
+					"TargetObject": "TargetObjects/TeleportPoint0"
+				}
+            ]
+        }
+    ],
+    "Participants": [
+    ]
+}

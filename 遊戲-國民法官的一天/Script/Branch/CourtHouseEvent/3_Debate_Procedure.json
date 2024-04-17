@@ -1,0 +1,129 @@
+{
+    "Events": [
+        {
+            "eventItem": [
+                {
+                    "Object": "3_Debate_Procedure",
+                    "Type": "SetIntroductionByID"
+                },
+                {
+                    "Type": "IntroductionFlyIn"
+                },
+                {
+                    "Object": "3_Debate_Procedure",
+                    "Type": "SetStageIntroByID"
+                },
+                {
+                    "Type": "StageIntroPushIn"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "Space",
+                    "Type": "WaitKeyPress"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Type": "IntroductionFlyOut"
+                },
+                {
+                    "Object": "2",
+                    "Type": "Sleep"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "VCam1",
+                    "TargetObject": "CamPoint_Prosecutor",
+                    "Type": "CameraMoveToCamPoint"
+                },
+                {
+                    "Object": "VCam1",
+                    "Type": "CameraSwitch"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "Prosecutor",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"被告殺人處死刑、無期徒刑或10年以上有期徒刑。\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "Prosecutor",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"但同意自首可減輕。\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "Prosecutor",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"被告犯罪當下無緊急情況，是確認父親熟睡才下手。\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "Prosecutor",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"犯後潑灑硫酸，都是計畫殺人，手段兇殘。\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "Prosecutor",
+                    "Type": "AddPendingTalkToDialogue"
+                },
+                {
+                    "Object": "Prosecutor",
+                    "Type": "NPCDisplayTalk"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "VCam1",
+                    "TargetObject": "CamPoint_DefenseCounsel",
+                    "Type": "CameraMoveToCamPoint"
+                },
+                {
+                    "Object": "DefenseCounsel",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"被告長期受暴，家庭、社會支援也在死者阻擋或恐嚇下斷絕\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "DefenseCounsel",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"已別無他法,殺人對被告也是衝擊\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "DefenseCounsel",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"避重就輕並非本意，希望引用刑法第59條再減刑。\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "DefenseCounsel",
+                    "Type": "AddPendingTalkToDialogue"
+                },
+                {
+                    "Object": "DefenseCounsel",
+                    "Type": "NPCDisplayTalk"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Type": "StageIntroPushOut"
+                },
+                {
+                    "Object": "CourtHouseEvent/4_Comment_Procedure",
+                    "Type": "ForcedToLoadBranchScript"
+                }
+            ]
+        }
+    ]
+}

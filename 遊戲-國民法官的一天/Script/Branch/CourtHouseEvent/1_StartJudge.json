@@ -1,0 +1,199 @@
+{
+    "Events": [
+        {
+            "eventItem": [
+                {
+                    "Object": "1_StartJudge",
+                    "Type": "SetIntroductionByID"
+                },
+                {
+                    "Type": "IntroductionFlyIn"
+                },
+                {
+                    "Object": "1_StartJudge",
+                    "Type": "SetStageIntroByID"
+                },
+                {
+                    "Type": "StageIntroPushIn"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "Space",
+                    "Type": "WaitKeyPress"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Type": "IntroductionFlyOut"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "VCam1",
+                    "TargetObject": "CamPoint_Clerk",
+                    "Type": "CameraMoveToCamPoint"
+                },
+                {
+                    "Object": "VCam1",
+                    "Type": "CameraSwitch"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "Clerk",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"本院113年度國審訴字第9號\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "Clerk",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"於113年3月29日上午9時在刑事第2法庭開始審理。\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "Clerk",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"請檢察官敘述陳述起述要旨\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "Clerk",
+                    "Type": "AddPendingTalkToDialogue"
+                },
+                {
+                    "Object": "Clerk",
+                    "Type": "NPCDisplayTalk"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "VCam1",
+                    "TargetObject": "CamPoint_Prosecutor",
+                    "Type": "CameraMoveToCamPoint"
+                },
+                {
+                    "Object": "Prosecutor",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"被告XXX與被害人○○○為父女關係\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "Prosecutor",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"於112年5月10日晚間2時，被告趁被害人熟睡持水果刀刺向被害人\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "Prosecutor",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"被害人當場死亡。被告自首，依《刑法》第271條第1項殺人罪起訴\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "Prosecutor",
+                    "Type": "AddPendingTalkToDialogue"
+                },
+                {
+                    "Object": "Prosecutor",
+                    "Type": "NPCDisplayTalk"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "VCam1",
+                    "TargetObject": "CamPoint_PresidingJudge",
+                    "Type": "CameraMoveToCamPoint"
+                },
+                {
+                    "Object": "PresidingJudge",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"請問被告姓名?\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "PresidingJudge",
+                    "Type": "NPCDisplayTalk"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "VCam1",
+                    "TargetObject": "CamPoint_Defendant",
+                    "Type": "CameraMoveToCamPoint"
+                },
+                {
+                    "Object": "Defendant",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"XXX\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "Defendant",
+                    "Type": "NPCDisplayTalk"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "VCam1",
+                    "TargetObject": "CamPoint_PresidingJudge",
+                    "Type": "CameraMoveToCamPoint"
+                },
+                {
+                    "Object": "PresidingJudge",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"以下事項請被告了解\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "PresidingJudge",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"一、犯罪嫌疑及所犯所有罪名。罪名經告知後，認應變更者，應告知\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "PresidingJudge",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"二、得保持緘默，無須違背自己之意思而為陳述。\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "PresidingJudge",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"三、得選任辯護人。\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "PresidingJudge",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"四、得請求調查有利之證據。\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "PresidingJudge",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"接著請檢方與辯方進行開審陳述\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "PresidingJudge",
+                    "Type": "NPCDisplayTalk"
+                },
+                {
+                    "Type": "StageIntroPushOut"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "CourtHouseEvent/2_OpeningStatement",
+                    "Type": "ForcedToLoadBranchScript"
+                }
+            ]
+        }
+    ]
+}

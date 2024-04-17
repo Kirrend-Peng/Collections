@@ -1,0 +1,150 @@
+{
+    "Events": [
+        {
+            "eventItem": [
+                {
+                    "Type": "WideScreen"
+                },
+                {
+                    "TargetObject": "BGM_EVENT1",
+                    "Type": "PlayBGM"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "Player",
+                    "TargetObject": "TargetObjects/SignInTarget",
+                    "Type": "PlayerMove"
+                },
+                {
+                    "Type": "WideScreen"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "1",
+                    "Type": "Sleep"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "CourtHouseStaff",
+                    "TargetObject": "{\"Attitude\":2, \"Say\":\"早上天氣不錯，你剛在路邊買早餐嗎？買完快點簽到，要開庭拉\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "CourtHouseStaff",
+                    "Type": "NPCDisplayTalk"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "CourtHouseStaff",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"請把國民身分證、選任通知書交出來給我檢核。\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "CourtHouseStaff",
+                    "Type": "NPCDisplayTalk"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "CourtHouseStaff",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"請告訴我您的姓名\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "CourtHouseStaff",
+                    "Type": "NPCDisplayTalk"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "Player",
+                    "Type": "WaitRecorderInput"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "Player",
+                    "Type": "PlayerDisplayTalk"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "CourtHouseStaff",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"然後抽個籤吧,我們要現場決定正選、備位國民法官\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "CourtHouseStaff",
+                    "Type": "NPCDisplayTalk"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "CourtHouseStaff",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"...\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "CourtHouseStaff",
+                    "Type": "NPCDisplayTalk"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "CourtHouseStaff",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"<<正選>>，再見囉。\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "CourtHouseStaff",
+                    "Type": "NPCDisplayTalk"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Type": "NormalScreen"
+                },
+                {
+                    "TargetObject": "BGM_STREET",
+                    "Type": "PlayBGM"
+                }
+            ]
+        }
+    ],
+    "Participants": [
+        {
+            "Object": "Player",
+            "Type": "Player"
+        },
+        {
+            "Object": "CourtHouseStaff",
+            "Type": "NPC"
+        }
+    ]
+}

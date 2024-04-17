@@ -1,0 +1,239 @@
+{
+    "Events": [
+        {
+            "eventItem": [
+				{
+                    "Type": "WideScreen"						
+                },
+                {
+                    "TargetObject": "BGM_COURT_HOUSE",
+                    "Type": "PlayBGM"
+                },
+				{
+                    "Object": "VCam1",
+                    "TargetObject": "None",
+                    "Type": "CameraFollow"
+                },
+				{
+                    "Object": "VCam1",
+                    "TargetObject": "None",
+                    "Type": "CameraLookAt"
+                },
+				{
+                    "Object": "VCam2",
+					"TargetObject": "CamPoint_CourtHouseEntrance",
+                    "Type": "CameraMoveToCamPoint"
+                },
+				{
+                    "Object": "VCam2",
+                    "Type": "CameraSwitch"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+				{
+                    "Object": "4",
+                    "Type": "Sleep"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+				{
+                    "Object": "VCam1",
+					"TargetObject": "CamPoint_PresidingJudge",
+                    "Type": "CameraMoveToCamPoint"
+                },
+				{
+                    "Object": "VCam1",
+                    "Type": "CameraSwitch"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+				{
+                    "Object": "4",
+                    "Type": "Sleep"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+				{
+                    "Object": "VCam2",
+					"TargetObject": "CamPoint_Clerk",
+                    "Type": "CameraMoveToCamPoint"
+                },
+				{
+                    "Object": "VCam2",
+                    "Type": "CameraSwitch"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+				{
+                    "Object": "4",
+                    "Type": "Sleep"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+				{
+                    "Object": "VCam1",
+					"TargetObject": "CamPoint_DefenseCounsel",
+                    "Type": "CameraMoveToCamPoint"
+                },
+				{
+                    "Object": "VCam1",
+                    "Type": "CameraSwitch"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+				{
+                    "Object": "4",
+                    "Type": "Sleep"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+				{
+                    "Object": "VCam2",
+					"TargetObject": "CamPoint_Defendant",
+                    "Type": "CameraMoveToCamPoint"
+                },
+				{
+                    "Object": "VCam2",
+                    "Type": "CameraSwitch"
+                },
+				{
+					"Type": "Teleport",
+					"Object":"Player",
+					"TargetObject": "TargetObjects/CourtHousePlayerSeat"
+				}
+            ]
+        },
+        {
+            "eventItem": [
+				{
+                    "Object": "4",
+                    "Type": "Sleep"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+				{
+                    "Object": "VCam1",
+					"TargetObject": "CamPoint_Prosecutor",
+                    "Type": "CameraMoveToCamPoint"
+                },
+				{
+                    "Object": "VCam1",
+                    "Type": "CameraSwitch"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+				{
+                    "Object": "4",
+                    "Type": "Sleep"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+				{
+                    "Object": "VCam2",
+					"TargetObject": "CamPoint_Witness",
+                    "Type": "CameraMoveToCamPoint"
+                },
+				{
+                    "Object": "VCam2",
+                    "Type": "CameraSwitch"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+				{
+                    "Object": "4",
+                    "Type": "Sleep"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+				{
+                    "Object": "VCam1",
+					"TargetObject": "CamPoint_CourtHousePlayer",
+                    "Type": "CameraMoveToCamPoint"
+                },
+				{
+                    "Object": "VCam1",
+                    "Type": "CameraSwitch"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+				{
+                    "Object": "2",
+                    "Type": "Sleep"
+                },
+				{
+					"Type": "NormalScreen"
+				}
+            ]
+        },
+        {
+            "eventItem": [
+				{
+					"Type": "ForcedToLoadBranchScript",
+					"Object":"CourtHouseEvent/1_StartJudge"
+				}
+            ]
+        }
+    ],
+    "Participants": [
+        {
+            "Object": "Player",
+            "Type": "Player"
+        },
+        {
+            "Object": "PresidingJudge",
+            "Type": "NPC"
+        },
+        {
+            "Object": "Prosecutor",
+            "Type": "NPC"
+        },
+        {
+            "Object": "Clerk",
+            "Type": "NPC"
+        },
+        {
+            "Object": "DefenseCounsel",
+            "Type": "NPC"
+        },
+        {
+            "Object": "DefendantWitness",
+            "Type": "NPC"
+        },
+        {
+            "Object": "ProsecutionWitness",
+            "Type": "NPC"
+        },
+        {
+            "Object": "Defendant",
+            "Type": "NPC"
+        }
+    ]
+}

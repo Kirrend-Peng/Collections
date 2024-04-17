@@ -1,0 +1,50 @@
+{
+    "Events": [
+		{
+            "eventItem": [
+				{
+                    "Type": "WideScreen"						
+                },
+                {
+					"Object": "Sister",
+                    "Type": "WaitNPCChatBubble"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "Sister",
+					"TargetObject":"{\"Attitude\":4, \"Say\":\"謝啦老哥,我感覺好些了\"}",
+                    "Type": "LetNPCSay"                         
+                },
+                {
+                    "Object": "Sister",
+                    "Type": "NPCDisplayTalk"                    
+                },
+                {
+					"TargetObject": "idle/true",         
+					"Object":"Sister",
+                    "Type": "SetNPCAnimatiorParaBool"
+				}
+            ]
+        },
+		{
+            "eventItem": [
+                {
+                    "Type": "NormalScreen"
+                }
+            ]
+        }
+    ],
+    "Participants": [
+        {
+            "Object": "Player",
+            "Type": "Player"
+        },
+		{
+            "Object": "Sister",
+            "Type": "NPC"
+        }
+    ]
+}

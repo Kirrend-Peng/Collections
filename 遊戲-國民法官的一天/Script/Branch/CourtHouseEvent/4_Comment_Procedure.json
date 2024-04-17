@@ -1,0 +1,99 @@
+{
+    "Events": [
+        {
+            "eventItem": [
+                {
+                    "Object": "4_Comment_Procedure",
+                    "Type": "SetIntroductionByID"
+                },
+                {
+                    "Type": "IntroductionFlyIn"
+                },
+                {
+                    "Object": "4_Comment_Procedure",
+                    "Type": "SetStageIntroByID"
+                },
+                {
+                    "Type": "StageIntroPushIn"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "Space",
+                    "Type": "WaitKeyPress"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Type": "IntroductionFlyOut"
+                },
+                {
+                    "Object": "2",
+                    "Type": "Sleep"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "VCam1",
+                    "TargetObject": "CamPoint_PresidingJudge",
+                    "Type": "CameraMoveToCamPoint"
+                },
+                {
+                    "Object": "VCam1",
+                    "Type": "CameraSwitch"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "VCam1",
+                    "TargetObject": "CamPoint_PresidingJudge",
+                    "Type": "CameraMoveToCamPoint"
+                },
+                {
+                    "Object": "PresidingJudge",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"我們將進行終局評議。\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "PresidingJudge",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"請所有國民法官與法官全程參與。\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "PresidingJudge",
+                    "Type": "NPCDisplayTalk"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Type": "GetJudgeResult"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "PresidingJudge",
+                    "Type": "NPCDisplayTalk"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Type": "StageIntroPushOut"
+                }
+            ]
+        }
+    ]
+}

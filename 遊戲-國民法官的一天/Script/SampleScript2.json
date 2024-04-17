@@ -1,0 +1,111 @@
+{
+    "Events": [
+        {
+            "eventItem": [
+                {
+                    "TargetObject": "BGM_CITY",
+                    "Type": "PlayBGM"
+                },
+                {
+                    "Object": "VillageChief",
+                    "TargetObject": "TargetLoc",
+                    "Type": "NPCMove"
+                },
+                {
+                    "Object": "VillageChief",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"你好\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "Judge",
+                    "TargetObject": "TargetLoc2",
+                    "Type": "NPCMove"
+                },
+                {
+                    "Object": "VillageChief",
+                    "TargetObject": "System:你好",
+                    "Type": "NPCGetTalk"
+                },
+                {
+                    "Object": "Judge",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"你好阿\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "VillageChief",
+                    "Type": "AddPendingTalkToDialogue"
+                },
+				{
+                    "Object": "VCam2",			
+                    "Type": "CameraSwitch"
+                },
+				{
+                    "Type": "WaitRecorderInput",
+					"Object":"Player"
+                },
+                {
+                    "TargetObject": "SEF_TIME_PASS",
+                    "Type": "PlaySoundEffect"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+				{
+                    "Object": "VCam2",
+                    "TargetObject": "40",			
+                    "Type": "CameraZoom"
+                },
+                {
+                    "Object": "VillageChief",
+                    "Type": "NPCGetTalkFromDialogue"
+                },
+				{
+                    "Type": "PauseBGM"
+                },
+                {
+                    "Object": "5",
+                    "Type": "Sleep"
+                },
+				{
+                    "TargetObject": "SEF_TIME_PASS",
+                    "Type": "PlaySoundEffect"
+                },
+                {
+                    "Object": "VillageChief",
+                    "Type": "AddPendingTalkToDialogue"
+                },
+                {
+                    "Object": "Judge",
+                    "Type": "NPCDisplayTalk"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+				{
+                    "Object": "VCam2",
+                    "TargetObject": "Judge",			
+                    "Type": "CameraFollow"
+                },
+                {
+                    "Object": "VillageChief",
+                    "Type": "NPCDisplayTalk"
+                },
+				{
+                    "Type": "ContinueBGM"
+                }
+            ]
+        }
+    ],
+    "Participants": [
+        {
+            "Object": "VillageChief",
+            "Type": "NPC"
+        },
+        {
+            "Object": "Judge",
+            "Type": "NPC"
+        }
+    ]
+}

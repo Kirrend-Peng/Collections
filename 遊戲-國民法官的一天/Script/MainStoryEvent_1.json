@@ -1,0 +1,254 @@
+{
+    "Events": [
+        {
+            "eventItem": [
+				{
+                    "Type": "WideScreen"						
+                },
+				{
+                    "Object": "VCam1",
+                    "TargetObject": "None",
+                    "Type": "CameraFollow"
+                },
+				{
+                    "Object": "VCam1",
+					"TargetObject": "CamPoint_LivingRoom",
+                    "Type": "CameraMoveToCamPoint"
+                },
+				{
+                    "Object": "VCam1",
+                    "TargetObject": "Player",
+                    "Type": "CameraLookAt"
+                },
+				{
+                    "Type": "PauseBGM"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                { 
+                    "Object": "Player",                         
+                    "TargetObject": "TargetObjects/MainStory1Target0",                  
+                    "Type": "PlayerMove"
+                },
+				{
+                    "Type": "WideScreen"						
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {                                              
+                    "Object": "1",
+                    "Type": "Sleep"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "TargetObject": "BGM_HEAVY_ATMOS",
+                    "Type": "PlayBGM"
+                },
+                {                                              
+                    "Object": "5",
+                    "Type": "Sleep"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "Player",
+					"TargetObject":"{\"Attitude\":4, \"Say\":\"...老妹?\"}",
+                    "Type": "LetPlayerSay"                         
+                },
+                {
+                    "Object": "Player",
+                    "Type": "PlayerDisplayTalk"                    
+                }
+            ]
+        },
+        {
+            "eventItem": [
+				{
+                    "Object": "Player",
+					"TargetObject":"{\"Attitude\":4, \"Say\":\"妳躺在這裡幹嘛?\"}",
+                    "Type": "LetPlayerSay"
+                },
+                {
+                    "Object": "Player",
+                    "Type": "PlayerDisplayTalk"                    
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "TargetObject": "BGM_TROUBLE_EVENT",
+                    "Type": "PlayBGM"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "Sister",
+					"TargetObject":"{\"Attitude\":1, \"Say\":\"老哥,我落榜了\"}",
+                    "Type": "LetNPCSay"                         
+                },
+                {
+                    "Object": "Sister",
+                    "Type": "NPCDisplayTalk"                    
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "Player",
+					"TargetObject":"{\"Attitude\":4, \"Say\":\"妳該不會真的只填第一志願吧\"}",
+                    "Type": "LetPlayerSay"                         
+                },
+                {
+                    "Object": "Player",
+                    "Type": "PlayerDisplayTalk"                    
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Type": "PauseBGM"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "Sister",
+					"TargetObject":"{\"Attitude\":1, \"Say\":\"...\"}",
+                    "Type": "LetNPCSay"                         
+                },
+                {
+                    "Object": "Sister",
+                    "Type": "NPCDisplayTalk"                    
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "Player",
+					"TargetObject":"{\"Attitude\":6, \"Say\":\"...\"}",
+                    "Type": "LetPlayerSay"                         
+                },
+                {
+                    "Object": "Player",
+                    "Type": "PlayerDisplayTalk"                    
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Type": "ContinueBGM"
+                },
+                {
+                    "Object": "Sister",
+					"TargetObject":"{\"Attitude\":1, \"Say\":\"嗚嗚嗚嗚\"}",
+                    "Type": "LetNPCSay"                         
+                },
+                {
+                    "Object": "Sister",
+                    "Type": "NPCDisplayTalk"                    
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "Player",
+					"TargetObject":"{\"Attitude\":6, \"Say\":\"得說些什麼安撫她才行\"}",
+                    "Type": "LetPlayerSay"                         
+                },
+                {
+                    "Object": "Player",
+                    "Type": "PlayerDisplayTalk"                    
+                },
+                {
+                    "Type": "NormalScreen"
+                },
+                {
+                    "Object": "EventObjects/MyHouse/BedRoomEvent",
+                    "Type": "EnableObj"
+                },
+                {
+                    "Object": "EventObjects/MyHouse/LivingRoomEvent",
+                    "Type": "EnableObj"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+				{
+					"Type": "SetIntroductionByID",
+					"Object":"RookieIntroduction1"
+				},
+				{
+					"Type": "IntroductionFlyIn"
+				},
+				{                                              
+                    "Object": "2",
+                    "Type": "Sleep"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+				{
+					"Type": "WaitKeyPress",
+					"Object":"Space"
+				}
+            ]
+        },
+        {
+            "eventItem": [
+				{
+					"Type": "SetIntroductionByID",
+					"Object":"RookieIntroduction2"
+				},
+				{                                              
+                    "Object": "1",
+                    "Type": "Sleep"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+				{
+					"Type": "WaitKeyPress",
+					"Object":"Space"
+				}
+            ]
+        },
+        {
+            "eventItem": [
+				{
+					"Type": "IntroductionFlyOut"
+				},
+				{                                              
+                    "Object": "1",
+                    "Type": "Sleep"
+                }
+            ]
+        }
+    ],
+    "Participants": [
+        {
+            "Object": "Player",
+            "Type": "Player"
+        }
+    ]
+}

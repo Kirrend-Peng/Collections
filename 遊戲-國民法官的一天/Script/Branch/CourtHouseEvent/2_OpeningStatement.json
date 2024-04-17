@@ -1,0 +1,264 @@
+{
+    "Events": [
+        {
+            "eventItem": [
+                {
+                    "Object": "2_OpeningStatement",
+                    "Type": "SetIntroductionByID"
+                },
+                {
+                    "Type": "IntroductionFlyIn"
+                },
+                {
+                    "Object": "2_OpeningStatement",
+                    "Type": "SetStageIntroByID"
+                },
+                {
+                    "Type": "StageIntroPushIn"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "Space",
+                    "Type": "WaitKeyPress"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Type": "IntroductionFlyOut"
+                },
+                {
+                    "Object": "2",
+                    "Type": "Sleep"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "VCam1",
+                    "TargetObject": "CamPoint_Prosecutor",
+                    "Type": "CameraMoveToCamPoint"
+                },
+                {
+                    "Object": "VCam1",
+                    "Type": "CameraSwitch"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "Prosecutor",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"（檢方拿出兇器，並投影說明屍體傷勢以及穿刺、割傷之大小。）\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "Prosecutor",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"多年受暴史中政府皆有協助\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "Prosecutor",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"包括核發保護令、家庭訪視、提供緊急庇護所\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "Prosecutor",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"被告卻不願意接受協助。\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "Prosecutor",
+                    "Type": "AddPendingTalkToDialogue"
+                },
+                {
+                    "Object": "Prosecutor",
+                    "Type": "NPCDisplayTalk"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "VCam1",
+                    "TargetObject": "CamPoint_PresidingJudge",
+                    "Type": "CameraMoveToCamPoint"
+                },
+                {
+                    "Object": "PresidingJudge",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"請檢方證人至應訊台。\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "PresidingJudge",
+                    "Type": "NPCDisplayTalk"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "VCam1",
+                    "TargetObject": "CamPoint_InterrogationDesk",
+                    "Type": "CameraMoveToCamPoint"
+                },
+                {
+                    "Object": "ProsecutionWitness",
+                    "TargetObject": "TargetObjects/InterrogationDesk",
+                    "Type": "NPCMove"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "ProsecutionWitness",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"我是刑事鑑識人員XX,因被告潑灑硫酸，被害人屍體異常發黑。\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "ProsecutionWitness",
+                    "Type": "AddPendingTalkToDialogue"
+                },
+                {
+                    "Object": "ProsecutionWitness",
+                    "Type": "NPCDisplayTalk"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "ProsecutionWitness",
+                    "TargetObject": "TargetObjects/WitnessSeat_Right1",
+                    "Type": "NPCMove"
+                },
+                {
+                    "Object": "VCam1",
+                    "TargetObject": "CamPoint_PresidingJudge",
+                    "Type": "CameraMoveToCamPoint"
+                },
+                {
+                    "Object": "PresidingJudge",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"請辯護方進行陳述。\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "PresidingJudge",
+                    "Type": "NPCDisplayTalk"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "VCam1",
+                    "TargetObject": "CamPoint_DefenseCounsel",
+                    "Type": "CameraMoveToCamPoint"
+                },
+                {
+                    "Object": "DefenseCounsel",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"（拿出過去被告筆錄資料以及6年中10次遭受被害人之家暴通報紀錄）\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "DefenseCounsel",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"被告長期被父親辱罵、家暴、社交隔離、金錢控制，生不如死。\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "DefenseCounsel",
+                    "Type": "AddPendingTalkToDialogue"
+                },
+                {
+                    "Object": "DefenseCounsel",
+                    "Type": "NPCDisplayTalk"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "VCam1",
+                    "TargetObject": "CamPoint_PresidingJudge",
+                    "Type": "CameraMoveToCamPoint"
+                },
+                {
+                    "Object": "PresidingJudge",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"請辯方證人至應訊台。\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "PresidingJudge",
+                    "Type": "NPCDisplayTalk"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "VCam1",
+                    "TargetObject": "CamPoint_InterrogationDesk",
+                    "Type": "CameraMoveToCamPoint"
+                },
+                {
+                    "Object": "DefendantWitness",
+                    "TargetObject": "TargetObjects/InterrogationDesk",
+                    "Type": "NPCMove"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "DefendantWitness",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"我是被告的弟弟,死者喝酒後經常家暴,被告曾說想自縊。\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "DefendantWitness",
+                    "TargetObject": "{\"Attitude\":4, \"Say\":\"我知道姐姐犯了罪但懇請減輕量刑，讓我們早日團聚。\"}",
+                    "Type": "LetNPCSay"
+                },
+                {
+                    "Object": "DefendantWitness",
+                    "Type": "AddPendingTalkToDialogue"
+                },
+                {
+                    "Object": "DefendantWitness",
+                    "Type": "NPCDisplayTalk"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "ProsecutionWitness",
+                    "TargetObject": "TargetObjects/WitnessSeat_Right1",
+                    "Type": "NPCMove"
+                },
+                {
+                    "Object": "VCam1",
+                    "TargetObject": "CamPoint_CourtHousePlayer",
+                    "Type": "CameraMoveToCamPoint"
+                },
+                {
+                    "Type": "StageIntroPushOut"
+                }
+            ]
+        },
+        {
+            "eventItem": [
+                {
+                    "Object": "CourtHouseEvent/3_Debate_Procedure",
+                    "Type": "ForcedToLoadBranchScript"
+                }
+            ]
+        }
+    ]
+}

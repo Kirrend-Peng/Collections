@@ -1,0 +1,25 @@
+{
+    "Events": [
+        {
+            "eventItem": [
+				{
+                    "Object": "VCam1",
+                    "TargetObject": "None",
+                    "Type": "CameraFollow"
+                },
+				{
+                    "Object": "VCam1",
+					"TargetObject": "CamPoint_LivingRoom",
+                    "Type": "CameraMoveToCamPoint"
+                },
+				{
+                    "Object": "VCam1",
+                    "TargetObject": "Player",
+                    "Type": "CameraLookAt"
+                }
+            ]
+        }
+    ],
+    "Participants": [
+    ]
+}

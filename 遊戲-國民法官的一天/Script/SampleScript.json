@@ -1,0 +1,165 @@
+{
+    "Events": [
+        {
+            "eventItem": [
+                {
+                    "Type": "WaitRecorderInput",    	// 參照Recorder某參數,當有記錄過之後,將該參數設定為false
+					"Object":"Player"						    v
+                },
+                {
+                    "Type": "GetJudgeResult"            
+                }, 
+                {
+                    "Object": "VillageChief",
+                    "Type": "NPCGetTalkFromDialogue"    // 第一次執行將所在dialogue index至最新index的對話內容當作input, 執行完先放在npc 變數pendingResponse
+                },                                      		v
+                {
+                    "Object": "VillageChief",
+					"TargetObject":"System:你好",        // 執行完先放在npc 變數 pendingResponse
+                    "Type": "NPCGetTalk"                        v
+                },
+				{
+                    "Object": "VillageChief",           //  將pendingResponse內容放入ScriptManager-Dialogue 小聲說的、思考的不需添加,
+                    "Type": "AddPendingTalkToDialogue"          v
+                },
+				{
+                    "Object": "VillageChief",
+					"TargetObject":"你好",               // 將TargetObject 放在npc 變數 pendingResponse
+                    "Type": "LetNPCSay"                         v
+                },
+				{
+                    "Object": "Player",
+					"TargetObject":"你好",               // 將TargetObject 放在npc 變數 pendingResponse
+                    "Type": "LetPlayerSay"                         
+                },
+                {
+                    "Object": "VillageChief",
+                    "Type": "NPCDisplayTalk"                    v
+                },
+                {
+                    "Object": "Player",
+                    "Type": "PlayerDisplayTalk"                    
+                },				
+                { 
+                    "Object": "VillageChief",                   v
+                    "TargetObject": "Target2",                  
+                    "Type": "NPCMove"
+                },
+                { 
+                    "Object": "Player",                         v
+                    "TargetObject": "Target2",                  
+                    "Type": "PlayerMove"
+                },
+                {
+                    "Object": "VCam1",					// 增加TargetObject:None時,停止追蹤
+                    "TargetObject": "VillageChief",				v
+                    "Type": "CameraFollow"
+                },
+				{
+                    "Object": "VCam1",
+                    "TargetObject": "40",						v
+                    "Type": "CameraZoom"
+                },
+				{
+                    "Object": "VCam1",							v
+                    "Type": "CameraSwitch"
+                },
+				{
+                    "Object": "VCam1",							v
+					"TargetObject": "CamPoint_BedRoom",
+                    "Type": "CameraMoveToCamPoint"
+                },
+				{
+                    "Object": "VCam1",					// 增加TargetObject:None時,停止追蹤
+                    "TargetObject": "VillageChief",				v
+                    "Type": "CameraLookAt"
+                },
+                {                                               v
+                    "TargetObject": "BGM_ID",
+                    "Type": "PlayBGM"
+                },
+                {
+                    "Type": "PauseBGM"							v
+                },
+                {
+                    "Type": "ContinueBGM"						v
+                },
+                {
+                    "TargetObject": "TIME_PASS",                v
+                    "Type": "PlaySoundEffect"
+                },
+                {
+                    "Type": "WideScreen"						v
+                },
+                {
+                    "Type": "NormalScreen"						v
+                },
+				{
+					"TargetObject": "CamPoint_BedRoom",         v
+					"Object":"VCam1",
+                    "Type": "PlaySoundEffect"
+				},
+				{
+					"TargetObject": "isRun/true",         
+					"Object":"Sister",
+                    "Type": "SetNPCAnimatiorParaBool"
+				},
+				{
+					"TargetObject": "isRun/0",
+					"Object":"Sister",
+                    "Type": "SetNPCAnimatiorParaFloat"
+				},
+				{
+					"TargetObject": "isRun/0",         
+					"Object":"Sister",
+                    "Type": "SetNPCAnimatiorParaInt"
+				},
+				{
+					"Type": "SetIntroductionByID",
+					"Object":"RookieIntroduction1"
+				},
+				{
+					"Type": "IntroductionFlyIn"
+				},
+				{
+					"Type": "IntroductionFlyOut"
+				},
+				{
+					"Type": "WaitKeyPress",
+					"Object":"Space"
+				},
+				{
+					"Type": "Teleport",
+					"Object":"Player",
+					"TargetObject": "TargetObjects/CourtHousePlayerSeat"
+				},
+				{
+					"Type": "ForcedToLoadBranchScript",
+					"Object":"TeleportToCourtHouseScript"
+				},
+				{
+					"Type": "SetStageIntroByID",
+					"Object":"1_StartJudge"
+				},
+				{
+					"Type": "StageIntroPushIn"
+				},
+				{
+					"Type": "StageIntroPushOut"
+				}
+            ]
+        },
+        {
+            "eventItem": [
+                {                                               v
+                    "Object": "5",
+                    "Type": "Sleep"
+                }
+            ]
+        }
+    ],
+    "Participants": [
+		{"Object":"VillageChief","Type":"NPC"},
+		{"Object":"VillageChief2","Type":"NPC"}
+    ]
+}

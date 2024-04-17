@@ -1,0 +1,24 @@
+{
+    "Events": [
+        {
+            "eventItem": [
+				{
+                    "Object": "VCam1",
+                    "TargetObject": "Player",
+                    "Type": "CameraFollow"
+                },
+				{
+                    "Object": "VCam1",
+                    "TargetObject": "Player",
+                    "Type": "CameraLookAt"
+                },
+                {
+                    "TargetObject": "BGM_STREET",
+                    "Type": "PlayBGM"
+                }
+            ]
+        }
+    ],
+    "Participants": [
+    ]
+}

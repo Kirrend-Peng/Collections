@@ -1,0 +1,37 @@
+{
+    "Events": [
+        {
+            "eventItem": [
+                {
+                    "Object": "EventObjects/MyHouse/BedRoomEvent",
+                    "Type": "DisableObj"
+                },
+                {
+                    "Object": "EventObjects/MyHouse/LivingRoomEvent",
+                    "Type": "DisableObj"
+                },
+				{
+                    "Object": "VCam1",
+                    "TargetObject": "None",
+                    "Type": "CameraFollow"
+                },
+				{
+                    "Object": "VCam1",
+					"TargetObject": "CamPoint_BedRoom",
+                    "Type": "CameraMoveToCamPoint"
+                },
+				{
+                    "Object": "VCam1",
+                    "TargetObject": "Player",
+                    "Type": "CameraLookAt"
+                }
+            ]
+        }
+    ],
+    "Participants": [
+        {
+            "Object": "Player",
+            "Type": "Player"
+        }
+    ]
+}
